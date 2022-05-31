@@ -16,6 +16,9 @@ def tienda():
 @app.route('/admin')
 def admin():
     return render_template('admin.html')
+@app.route('/login')
+def login():
+    return render_template('login.html')
 
 #Metodo para correr la aplicacion
 if __name__ == '__main__':
