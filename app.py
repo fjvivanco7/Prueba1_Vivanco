@@ -10,6 +10,12 @@ app = Flask(__name__, template_folder='templates')
 @app.route('/')
 def index():
     return render_template('index.html')
+@app.route('/tienda')
+def tienda():
+    return render_template('tienda.html')
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
 
 #Metodo para correr la aplicacion
 if __name__ == '__main__':
